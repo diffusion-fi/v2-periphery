@@ -1,0 +1,5 @@
+export default {
+    factory: "0x21461DaFBec3EcBeaff138c0Ce665d67228d139e",
+    weth9: "0xbc0b8C49443E309528a7F21211933A58096B866c",
+    router: "0xd4C7B8a4fDFE65B8f2199748EEdC909A9CE7c58c"
+}
