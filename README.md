@@ -24,3 +24,11 @@ The following assumes the use of `node@>=10`.
 ## Run Tests
 
 `yarn test`
+
+
+## Staging Deployments
+
+npx hardhat deploy-token --to 0x1662BfeA0Af3515baf9DAb3f0961Dc26DD35202B --supply 1000000000 --name MockUSDC --symbol MUSDC  --network evmostestnet
+npx hardhat deploy-token --to 0x1662BfeA0Af3515baf9DAb3f0961Dc26DD35202B --supply 1000000000 --name MockEVMOS --symbol MEVMOS  --network evmostestnet
+npx hardhat deploy-token --to 0x1662BfeA0Af3515baf9DAb3f0961Dc26DD35202B --supply 1000000000 --name MockATOM --symbol MATOM  --network evmostestnet
+npx hardhat deploy-token --to 0x1662BfeA0Af3515baf9DAb3f0961Dc26DD35202B --supply 1000000000 --name MockOSMOSIS --symbol MOSMOSIS  --network evmostestnet

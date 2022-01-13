@@ -22,7 +22,7 @@ task('deploy-token', 'Deploys MockERC20 contract')
     .addParam("name", "token name")
     .addParam("symbol", "token symbol")
     .setAction(async (args, hre) => {
-        const factory = await hre.ethers.getContractFactory(`contracts/MockERC20.sol:MockERC20`)
+        const factory = await hre.ethers.getContractFactory(`contracts/test/MockERC20.sol:MockERC20`)
         const instance = await factory.deploy(args.to, ethers.utils.parseEther(args.supply), args.name, args.symbol)
 
         await instance.deployed()
