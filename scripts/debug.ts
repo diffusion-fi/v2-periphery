@@ -12,6 +12,6 @@ task('debug-erc20', 'Debug calls')
     .setAction(async (args, hre) => {
         const instance = await hre.ethers.getContractAt("MockERC20", args.address) as MockERC20;
 
-        logger.info(instance.balanceOf(ethers.constants.AddressZero));
+        logger.info(await instance.balanceOf(ethers.constants.AddressZero));
     })
 
