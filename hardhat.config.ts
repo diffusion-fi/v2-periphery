@@ -11,6 +11,7 @@ dotenv.config({ path: `${__dirname}/.env` });
 
 import("./scripts/index")
 .catch((err) => {
+  console.error(err)
   console.log("./scripts/index not imported until after build completes")
 });
 
