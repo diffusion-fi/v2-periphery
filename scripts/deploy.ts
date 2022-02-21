@@ -3,6 +3,7 @@ import '@nomiclabs/hardhat-ethers'
 import { Logger } from 'tslog'
 import config from './config/config'
 import { ethers } from 'ethers'
+import { Multicall2 } from '../dist/types'
 
 const logger: Logger = new Logger()
 
@@ -10,6 +11,16 @@ task('deploy-router', 'Deploys UniswapV2Router02 contract')
     .setAction(async (args, hre) => {
         const factory = await hre.ethers.getContractFactory(`contracts/UniswapV2Router02.sol:UniswapV2Router02`)
         const instance = await factory.deploy(config.factory, config.weth9)
+
+        await instance.deployed()
+
+        logger.info(instance.address)
+    })
+
+task('deploy-multicall2', 'Deploys Multicall2 contract')
+    .setAction(async (args, hre) => {
+        const factory = await hre.ethers.getContractFactory(`contracts/Multicall2.sol:Multicall2`)
+        const instance = await factory.deploy()
 
         await instance.deployed()
 
