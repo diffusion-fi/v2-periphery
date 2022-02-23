@@ -3,7 +3,6 @@ import '@nomiclabs/hardhat-ethers'
 import { Logger } from 'tslog'
 import config from './config/config'
 import { ethers } from 'ethers'
-import { Multicall2 } from '../dist/types'
 
 const logger: Logger = new Logger()
 

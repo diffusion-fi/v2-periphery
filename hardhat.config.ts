@@ -45,9 +45,10 @@ const config: HardhatUserConfig = {
       gasPrice: utils.parseUnits("150", "gwei").toNumber(),
     },
     evmostestnet: {
-      url: `https://ethereum.rpc.evmos.dev`,
+      url: `https://evmos-archive-testnet.api.bdnodes.net:8545`,
       accounts: [DEPLOYER_PRIVATE_KEY],
       gasPrice: utils.parseUnits("50", "gwei").toNumber(),
+      chainId: 9000
     },
   },
   abiExporter: {
