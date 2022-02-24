@@ -38,8 +38,8 @@ npx hardhat deploy-multicall2 --network evmostestnet
 
 npx hardhat deploy-token --to 0x3c6e75206c1103f53004b5ae39b9F5648A37bE3e --supply 100000000 --name MockMainReward --symbol MainReward  --network evmostestnet
 npx hardhat deploy-token --to 0x3c6e75206c1103f53004b5ae39b9F5648A37bE3e --supply 100000000 --name MockSecondaryReward --symbol SecondaryReward  --network evmostestnet
-npx hardhat deploy-token --to 0x3c6e75206c1103f53004b5ae39b9F5648A37bE3e --supply 100000000 --name LeftHandSide2 --symbol LHS2  --network evmostestnet
-npx hardhat deploy-token --to 0x3c6e75206c1103f53004b5ae39b9F5648A37bE3e --supply 100000000 --name RightHandSide2 --symbol RHS2  --network evmostestnet
+npx hardhat deploy-token --to 0x3c6e75206c1103f53004b5ae39b9F5648A37bE3e --supply 100000000 --name LeftHandSide --symbol LHS  --network evmostestnet
+npx hardhat deploy-token --to 0x3c6e75206c1103f53004b5ae39b9F5648A37bE3e --supply 100000000 --name RightHandSide --symbol RHS  --network evmostestnet
 
 
 npx hardhat add-liquidity --network evmostestnet
