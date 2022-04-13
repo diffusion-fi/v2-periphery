@@ -31,8 +31,10 @@ The following assumes the use of `node@>=10`.
 ```
 npx hardhat node
 
+npx hardhat deploy-multisig --network evmostestnet
+
 npx hardhat deploy-factory --network evmostestnet
-npx hardhat deploy-weth9 --network evmostestnet
+
 npx hardhat deploy-router --network evmostestnet
 npx hardhat deploy-multicall2 --network evmostestnet
 
@@ -46,6 +48,10 @@ npx hardhat add-liquidity --network evmostestnet
 
 npx hardhat deploy-minichef --network evmostestnet
 npx hardhat deploy-rewarder --network evmostestnet
+npx hardhat set-emission --network evmostestnet
+
+npx hardhat add-pool --allocpoint 100 --lptoken 0x1050C5fe822557Bc19f00491894B755FB4eD688B --network evmostestnet
+npx hardhat add-rewarder --allocpoint 100 --pid 0 --network evmostestnet
 
 npx hardhat deploy-token --to 0x1662BfeA0Af3515baf9DAb3f0961Dc26DD35202B --supply 1000000000 --name MockUSDC --symbol MUSDC  --network evmostestnet
 npx hardhat deploy-token --to 0x1662BfeA0Af3515baf9DAb3f0961Dc26DD35202B --supply 1000000000 --name MockEVMOS --symbol MEVMOS  --network evmostestnet
