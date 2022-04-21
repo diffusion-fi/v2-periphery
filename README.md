@@ -51,7 +51,13 @@ npx hardhat deploy-rewarder --network evmostestnet
 npx hardhat set-emission --network evmostestnet
 
 npx hardhat add-pool --allocpoint 100 --lptoken 0x1050C5fe822557Bc19f00491894B755FB4eD688B --network evmostestnet
+npx hardhat add-pool --allocpoint 100 --lptoken 0xe820036d36e485d5905da18e4f17f20499824917 --network evmostestnet
+npx hardhat add-pool --allocpoint 100 --lptoken 0x9327f82c1c9C7e73384d91877084e5c11dc704e9 --network evmostestnet
+npx hardhat add-pool --allocpoint 50 --lptoken 0xAa8C7933C707152948A937e3FAED9B22EdBF63bD --network evmostestnet
+npx hardhat add-pool --allocpoint 50 --lptoken 0x3a0E0a2E406C3D639259173a1E69eA1B07E4d00A --network evmostestnet
 npx hardhat add-rewarder --allocpoint 100 --pid 0 --network evmostestnet
+npx hardhat add-rewarder --allocpoint 100 --pid 1 --network evmostestnet
+npx hardhat add-rewarder --allocpoint 50 --pid 3 --network evmostestnet
 
 npx hardhat deploy-token --to 0x1662BfeA0Af3515baf9DAb3f0961Dc26DD35202B --supply 1000000000 --name MockUSDC --symbol MUSDC  --network evmostestnet
 npx hardhat deploy-token --to 0x1662BfeA0Af3515baf9DAb3f0961Dc26DD35202B --supply 1000000000 --name MockEVMOS --symbol MEVMOS  --network evmostestnet
