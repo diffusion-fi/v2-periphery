@@ -12,7 +12,7 @@ export default {
     testerAddress: "",
     rewardToken: "0x3f75ceabCDfed1aCa03257Dc6Bdc0408E2b4b026",
     secondaryRewardToken: "",
-    miniChef: "",
+    miniChef: "0x067eC87844fBD73eDa4a1059F30039584586e09d",
     complexRewarderTime: "",
     diffusion: "0x3f75ceabCDfed1aCa03257Dc6Bdc0408E2b4b026"
 }
